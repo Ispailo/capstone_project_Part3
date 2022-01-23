@@ -3,7 +3,7 @@ C'est quoi Kompose ? C'est un outil de conversion de tout ce qui compose (notamm
 
 Kubernetes définit un jeu d'outils ("primitives") qui, ensemble, fournissent des mécanismes pour déployer, maintenir et mettre à l’échelle des applications. Ces éléments qui composent Kubernetes sont conçus pour être combinés et extensibles et donc permettre de supporter une grande variété de charge de travail. Cette extensibilité est fournie en grande partie par l'API de Kubernetes, qui est utilisée par les composants internes aussi bien que par les extensions et les conteneurs tournant sur Kubernetes15.
 
-####################Partie 3 : Convertir un fichier Docker Compose en ressources Kubernetes####################
+                           Partie 3 : Convertir un fichier Docker Compose en ressources Kubernetes
 
 Dans cette partie, on va traduire les services Compose en objets Kubernetes à l'aide de kompose. On a utiliser les définitions d'objet fournies par kompose comme point de départ et effectuerez des ajustements pour s'assurer que notre configuration utilisera Secrets, Services et PersistentVolumeClaims de la manière attendue par Kubernetes. À la fin, on disposra disposerez d'une application Node.js à instance unique avec une base de données MongoDB exécutée sur un cluster Kubernetes. Cette configuration reflétera la fonctionnalité du code décrit dans Conteneuriser une application Node.js avec Docker Compose et constituera un bon point de départ pour créer une solution prête pour la production qui s'adaptera à vos besoins.
 
